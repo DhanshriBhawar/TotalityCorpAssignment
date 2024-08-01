@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+Email:dhanshribhawar@gmail.com
+password:dhanshri@123
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Overview
+This project is a property management application built using React, Redux, and Material UI. It features user authentication, a property listing with search and filters, a shopping cart, and a checkout process. The application is designed to allow users to browse properties, manage a cart, and proceed to checkout.
 
-In the project directory, you can run:
+Features
+User Authentication: Users can log in and register.
+Property Listings: Users can view, filter, and search properties.
+Cart Management: Users can add properties to a cart, view cart details, and remove items.
+Wishlist: Users can add properties to a wishlist.
+Checkout Process: Users can enter booking details and proceed to checkout.
+Responsive Design: The application is designed to be responsive on various screen sizes.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Tech Stack
+Frontend: React, Redux, Material UI
+State Management: Redux for global state management
+Routing: React Router for navigation
+Local Storage: For persisting cart and wishlist data
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Project Structure
+src/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+components/
+PropertyCard.js: Displays individual property details.
+UserInfoModal.js: Modal component for user info and checkout.
 
-### `npm run build`
+Pages/
+Cart.js: Manages the cart view and operations.
+PropertyListing.js: Lists all properties with search and filter options.
+Login.js: Login page for user authentication.
+Register.js: Registration page for new users.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Context/
+CartContext.js: Provides cart and wishlist state management.
+AuthContext.js: Provides authentication state management.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Route/
+PrivateRoute.js: Handles protected routes for authenticated users.
 
-### `npm run eject`
+data/
+propertiesdata.json: Contains dummy data for property listings.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+App.js: Main application component with routing setup.
+index.js: Entry point of the application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Setup and Installation
+Clone the Repository:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
+Copy code
+git clone https://github.com/your-username/your-repository.git
+cd your-repository
+Install Dependencies:
+npm install
+npm start
+Run the Application:
 
-## Learn More
+Usage
+Login/Registration:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Navigate to /login or /register to log in or register a new user.
+Browse Properties:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Go to /properties to view the list of properties. Use search and filter options to find properties.
+Manage Cart:
 
-### Code Splitting
+Click the shopping cart icon to view and manage your cart. You can add or remove properties and proceed to checkout.
+Wishlist:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Toggle the heart icon to add or remove properties from your wishlist.
+Checkout:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Click "BOOK HOUSE" to enter booking details and proceed to checkout.
+Code Highlights
+Cart Management: Utilizes context and hooks for managing cart and wishlist state.
+Search and Filter: Implemented search and filter functionality in the PropertyListing component.
+Routing: Protected routes using PrivateRoute to ensure users are authenticated before accessing certain pages.

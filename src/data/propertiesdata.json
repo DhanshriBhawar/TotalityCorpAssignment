@@ -1,0 +1,83 @@
+ [
+    {
+      "id": 1,
+      "title": "Beautiful Beach House",
+      "description": "A lovely beach house with sea view.",
+      "price": 200,
+      "image": "https://wallpaperaccess.com/full/2315968.jpg",
+      "rating":4
+    },
+    {
+      "id": 2,
+      "title": "Mountain Cabin",
+      "description": "Cozy cabin in the mountains.",
+      "price": 150,
+      "image": "https://th.bing.com/th?id=OIP.odSm-Lqc9Au-acbkdUboowHaE-&w=304&h=205&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+      "rating":4
+    },
+    {
+      "id": 3,
+      "title": "City Apartment",
+      "description": "Modern apartment in the heart of the city.",
+      "price": 250,
+      "image": "https://th.bing.com/th?id=OIP.AlPOGhL46M4ElIITwfrWVwHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+      "rating":4
+    },
+    {
+      "id": 4,
+      "title": "Countryside Villa",
+      "description": "Spacious villa with beautiful countryside views.",
+      "price": 300,
+      "image": "https://th.bing.com/th?id=OIP.Qgw9L6tjVHQlYZckSuqArQHaE4&w=308&h=202&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+      "rating":4
+    },
+    {
+      "id": 5,
+      "title": "Lake House",
+      "description": "Serene house by the lake.",
+      "price": 220,
+      "image": "https://th.bing.com/th?id=OIP.MxWUKTShlqvcrjK2_2PvowHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+      "rating":4
+    },
+    {
+      "id": 6,
+      "title": "Desert Retreat",
+      "description": "A unique retreat in the desert.",
+      "price": 180,
+      "image": "https://th.bing.com/th/id/OIP.P3sm5urm-H28xcZXRxfaTgHaEz?w=255&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "rating":4
+    },
+    {
+      "id": 7,
+      "title": "Forest Cabin",
+      "description": "A peaceful cabin surrounded by forest.",
+      "price": 160,
+      "image": "https://th.bing.com/th/id/OIP.0a2TAV6PkgM9yISqbBLEgAHaE8?w=222&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "rating":4
+    },
+    {
+      "id": 8,
+      "title": "Mountain Chalet",
+      "description": "Luxurious chalet with mountain views.",
+      "price": 280,
+      "image": "https://th.bing.com/th/id/OIP.V31uUS4eddipyiLS3cBHDgHaFj?w=203&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "rating":4  
+    },
+    {
+      "id": 9,
+      "title": "Coastal Bungalow",
+      "description": "A charming bungalow by the coast.",
+      "price": 210,
+      "image": "https://th.bing.com/th/id/OIP.sTYV19gU6pc3o29xS-s0NwHaEw?w=204&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "rating":4
+    },
+    {
+      "id": 10,
+      "title": "Urban Loft",
+      "description": "Stylish loft in a bustling city.",
+      "price": 230,
+      "image": "https://th.bing.com/th/id/OIP._HcgKEFMvoEvWjYTrxA8BAHaHa?w=183&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "rating":4
+    }
+  ]
+  
