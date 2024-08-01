@@ -80,4 +80,8 @@ Click "BOOK HOUSE" to enter booking details and proceed to checkout.
 Code Highlights
 Cart Management: Utilizes context and hooks for managing cart and wishlist state.
 Search and Filter: Implemented search and filter functionality in the PropertyListing component.
+<<<<<<< HEAD
 Routing: Protected routes using PrivateRoute to ensure users are authenticated before accessing certain pages.
+=======
+Routing: Protected routes using PrivateRoute to ensure users are authenticated before accessing certain pages.
+>>>>>>> origin/main

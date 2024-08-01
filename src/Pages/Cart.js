@@ -67,7 +67,7 @@ const Cart = () => {
                         {item.title}
                       </Typography>
                       <Typography variant="body1" color="text.primary">
-                        ${item.price} per night
+                       ₹{item.price} per night
                       </Typography>
                       <Button variant="text" color="primary" onClick={() => removeFromCart(index)} sx={{ display: 'block', margin: '8px auto' }}>
                         Remove
@@ -94,22 +94,20 @@ const Cart = () => {
       {cart.length > 0 && (
         <Box sx={{ width: { xs: '100%', sm: '300px' }, margin: { xs: '16px 0', sm: '16px' }, padding: '16px', boxShadow: 3, borderRadius: 2 }}>
           <Typography variant="h6" component="div" sx={{ marginBottom: '16px' }}>
-            The total amount of
+            Order Summary
           </Typography>
           <Divider />
           <Box sx={{ display: 'flex', flexDirection: 'column', marginTop: '16px' }}>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-              <Typography>Temporary amount</Typography>
-              <Typography>${calculateTotal()}</Typography>
-            </Box>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-              <Typography>Shipping</Typography>
-              <Typography>Gratis</Typography>
-            </Box>
+            {cart.map(item => (
+              <Box key={item.id} sx={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                <Typography>{item.title}</Typography>
+                <Typography>₹{item.price.toFixed(2)}</Typography>
+              </Box>
+            ))}
             <Divider sx={{ marginTop: '16px' }} />
             <Box sx={{ display: 'flex', justifyContent: 'space-between', marginTop: '16px' }}>
-              <Typography>The total amount of (including VAT)</Typography>
-              <Typography>${calculateTotal()}</Typography>
+              <Typography>Total (including GST)</Typography>
+              <Typography>₹{calculateTotal()}</Typography>
             </Box>
             <Button variant="contained" color="primary" sx={{ marginTop: '16px', width: '100%' }} onClick={handleOpenModal}>
               GOT TO CHECKOUT

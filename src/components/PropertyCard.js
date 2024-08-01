@@ -42,7 +42,7 @@ const PropertyCard = ({ property, addToCart }) => {
           {property.description}
         </Typography>
         <Typography variant="body1" color="text.primary">
-          ${property.price} per night
+        ₹{property.price} per night
         </Typography>
         <Divider sx={{ marginY: '16px' }} />
         <Box>
